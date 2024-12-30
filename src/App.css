@@ -1,0 +1,147 @@
+/* 整体页面设置 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f9f9; /* 主色调的浅色背景 */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 页面内容垂直居中 */
+}
+
+/* 页面容器卡片 */
+.App {
+  background-color: #fff;
+  border: 1px solid #6BDEDE;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* 标题样式 */
+h1 {
+  color: #6BDEDE;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* 按钮样式 */
+button {
+  background-color: #6BDEDE;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto;
+  display: inline-block;
+  width: 100%; /* 按钮宽度占卡片 */
+  max-width: 300px; /* 限制最大宽度 */
+  text-align: center;
+}
+
+button:hover {
+  background-color: #5ccfcf;
+}
+
+button:disabled {
+  background-color: #a3e9e9;
+  cursor: not-allowed;
+}
+
+/* 输入框样式 */
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* NFT卡片容器 */
+.nft-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* 单个NFT卡片样式 */
+.listBox {
+  background-color: #fff;
+  border: 1px solid #6BDEDE;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.listBox:hover {
+  transform: translateY(-5px);
+}
+
+.listImg img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.listTitle h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.listRemark p {
+  font-size: 14px;
+  color: #555;
+}
+
+.listBtnBox .btn1 {
+  width: 100%; /* 按钮宽度为卡片宽度 */
+  background-color: #6BDEDE;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.listBtnBox .btn1:hover:not(:disabled) {
+  background-color: #5ccfcf;
+}
+
+/* 出售列表 */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff;
+  border: 1px solid #6BDEDE;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+ul li button {
+  margin: 0;
+  width: auto;
+}
